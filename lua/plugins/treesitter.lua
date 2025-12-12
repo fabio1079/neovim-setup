@@ -4,9 +4,19 @@ return {
   build = ":TSUpdate",
   config = function()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = { "python", "lua", "vim", "vimdoc" },
+      ensure_installed = {
+        "python",
+        "lua",
+        "vim",
+        "vimdoc",
+        "toml",
+        "javascript",
+        "typescript",
+        "tsx",
+      },
       highlight = { enable = true },
       indent = { enable = true },
+      incremental_selection = { enable = true },
     })
   end,
 }
