@@ -1,6 +1,8 @@
 -- LSP configuration
 return {
-  { "neovim/nvim-lspconfig" },
+  {
+    "neovim/nvim-lspconfig",
+  },
 
   -- Python LSP (pyright) + installer
   {
@@ -13,7 +15,7 @@ return {
     dependencies = { "williamboman/mason.nvim", "neovim/nvim-lspconfig" },
     config = function()
       require("mason-lspconfig").setup({
-        ensure_installed = { "pyright" }, -- installs pyright automatically
+        ensure_installed = { "pyright", "ts_ls" },
         automatic_installation = true,
       })
 
@@ -24,6 +26,12 @@ return {
         capabilities = capabilities,
       })
       vim.lsp.enable({ "pyright" })
+
+      -- Enable TypeScript/JavaScript LSP
+      vim.lsp.config("ts_ls", {
+        capabilities = capabilities,
+      })
+      vim.lsp.enable({ "ts_ls" })
 
       -- Global keymap for LSP (optional but nice)
       vim.api.nvim_create_autocmd("LspAttach", {

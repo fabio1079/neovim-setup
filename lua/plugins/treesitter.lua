@@ -9,7 +9,7 @@ return {
         "lua",
         "vim",
         "vimdoc",
-        "toml",
+        "json",
         "javascript",
         "typescript",
         "tsx",
