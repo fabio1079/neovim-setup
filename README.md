@@ -4,7 +4,7 @@
 
 ### Prerequisites
 
-- Neovim (v0.9+)
+- Neovim (v0.11+)
 - git
 - ripgrep (for Telescope live grep)
 - A [Nerd Font](https://www.nerdfonts.com/) installed in your terminal (for icons)
@@ -33,7 +33,11 @@ Then run `nvim` — lazy.nvim will auto-install all plugins on first launch.
         ├── colorscheme.lua       # Catppuccin theme
         ├── treesitter.lua        # Syntax highlighting (python, js, ts)
         ├── telescope.lua         # Find in files (Space+ff)
-        └── cmp.lua               # Autocomplete config
+        ├── cmp.lua               # Autocomplete config
+        ├── lsp.lua               # LSP (pyright, ts_ls, lua_ls via Mason)
+        ├── autopairs.lua         # Auto-close brackets and quotes
+        ├── gitsigns.lua          # Git diff markers in the gutter
+        └── indent.lua            # Indent guide lines
 ```
 
 ## Key bindings
@@ -42,6 +46,15 @@ Then run `nvim` — lazy.nvim will auto-install all plugins on first launch.
 - `Space f f` — find files
 - `Space f g` — live grep (search content in files)
 - `Space f b` — find open buffers
+
+## LSP
+
+- `gd` — go to definition
+- `gr` — go to references
+- `K` — hover documentation
+- `Space rn` — rename symbol
+- `Space ca` — code action
+- `Space d` — show diagnostics
 
 ## Autocomplete
 
