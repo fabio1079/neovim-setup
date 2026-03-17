@@ -17,6 +17,14 @@ git clone https://github.com/fabio1079/neovim-setup.git ~/.config/nvim
 
 Then run `nvim` — lazy.nvim will auto-install all plugins on first launch.
 
+## Uninstall
+
+```bash
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+```
+
 ## Structure
 
 ```
