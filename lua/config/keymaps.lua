@@ -12,3 +12,5 @@ map("n", "<leader>nt", "<cmd>tabnext<cr>", { desc = "Next tab" })
 map("n", "<leader>pt", "<cmd>tabprevious<cr>", { desc = "Previous tab" })
 map("n", "<leader>ct", "<cmd>tabclose<cr>", { desc = "Close tab" })
 map("n", "<leader>cT", "<cmd>tabonly<cr>", { desc = "Close other tabs" })
+
+map("v", "<RightMouse>", '"+y', { desc = "Copy selection" })

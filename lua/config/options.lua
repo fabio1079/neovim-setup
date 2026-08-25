@@ -16,6 +16,7 @@ opt.smartcase = true
 opt.splitright = true
 opt.splitbelow = true
 opt.updatetime = 250
+opt.mouse = "a"
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "

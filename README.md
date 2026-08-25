@@ -61,6 +61,8 @@ rm -rf ~/.local/share/nvim
 
 Files opened from the file tree open in a new tab. Opening an already open file focuses its tab instead. Click a tab to select it or its `x` to close it.
 
+Mouse support is enabled. Drag to select text, then right-click to copy it to the system clipboard.
+
 ## LSP
 
 - `gd` — go to definition
