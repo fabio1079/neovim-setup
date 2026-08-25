@@ -20,6 +20,9 @@ opt.updatetime = 250
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
+vim.opt.showtabline = 2
+vim.opt.tabline = "%!v:lua.require'config.tabline'.render()"
+
 -- Trim trailing whitespace on save
 vim.api.nvim_create_autocmd("BufWritePre", {
 	pattern = "*",

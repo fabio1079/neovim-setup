@@ -54,6 +54,12 @@ rm -rf ~/.local/share/nvim
 - `Space f f` — find files
 - `Space f g` — live grep (search content in files)
 - `Space f b` — find open buffers
+- `Space n t` — next tab
+- `Space p t` — previous tab
+- `Space c t` — close current tab
+- `Space c Shift+t` — close all other tabs
+
+Files opened from the file tree open in a new tab. Opening an already open file focuses its tab instead. Click a tab to select it or its `x` to close it.
 
 ## LSP
 
