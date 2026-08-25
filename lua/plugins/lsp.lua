@@ -12,7 +12,7 @@ return {
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
 			require("mason-lspconfig").setup({
-				ensure_installed = { "pyright", "ts_ls", "lua_ls" },
+				ensure_installed = { "lua_ls" },
 			})
 
 			-- LSP keymaps on attach
@@ -31,15 +31,15 @@ return {
 				end,
 			})
 
-			-- Python
-			vim.lsp.config("pyright", {
-				capabilities = capabilities,
-			})
+            -- Python
+            --vim.lsp.config("pyright", {
+			--	capabilities = capabilities,
+			--})
 
 			-- TypeScript / JavaScript
-			vim.lsp.config("ts_ls", {
-				capabilities = capabilities,
-			})
+			--vim.lsp.config("ts_ls", {
+			--	capabilities = capabilities,
+			--})
 
 			-- Lua
 			vim.lsp.config("lua_ls", {
@@ -52,7 +52,7 @@ return {
 				},
 			})
 
-			vim.lsp.enable({ "pyright", "ts_ls", "lua_ls" })
+			vim.lsp.enable({ "lua_ls" })
 		end,
 	},
 }
