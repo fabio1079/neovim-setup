@@ -59,7 +59,7 @@ rm -rf ~/.local/share/nvim
 - `Space c t` — close current tab
 - `Space c Shift+t` — close all other tabs
 
-Files opened from the file tree open in a new tab. Opening an already open file focuses its tab instead. Click a tab to select it or its `x` to close it.
+In the file tree, `Enter` opens the selected file in the current tab and `t` opens it in a new tab. Click a tab to select it or its `x` to close it.
 
 Mouse support is enabled. Drag to select text, then right-click to copy it to the system clipboard.
 
